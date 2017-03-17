@@ -18,7 +18,7 @@
 <meta property="og:image" content="http://dev.foxhis.com:945/images/openvpnKeys.png">
 <meta property="og:image" content="http://dev.foxhis.com:945/images/openVPNConnect.png">
 <meta property="og:image" content="http://dev.foxhis.com:945/images/openVPNConnectSuccesss.png">
-<meta property="og:updated_time" content="2016-10-24T06:04:34.000Z">
+<meta property="og:updated_time" content="2017-02-21T07:15:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="use openvpn visit hotel's local area network">
 <meta name="twitter:description" content="场景:    酒店部署了我们PMS，但是服务出现了问题，导致我们的移动平台XrmpPortal也出现了问题，连锁反应，我们的mobile app也出现了问题。当酒店不能及时配合我们做外网映射的情况下，我们如何才能远程连接到酒店的local area network进行debug呢？
@@ -61,9 +61,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://dev.foxhis.com:945"></form>
@@ -113,11 +113,14 @@
 <p>3.<br> 当完成hotel PC port forwarding之后，在我们的developer PC上输入<a href="http://192.168.4.7:9090/XrmpPortal" target="_blank" rel="external">http://192.168.4.7:9090/XrmpPortal</a><br> 就可以访问到酒店内的XrmpPortal服务了。</p>
 <p>Enjoy yourself</p>
 <p>4.<br>使用完毕之后，删除hotel PC上的port forwarding<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">netsh interface portproxy delete v4tov4 listenport=9090 listenaddress=192.168.4.7</div></pre></td></tr></table></figure></p>
+<p>#Trouble Shooting:</p>
+<p>1.ping酒店ping不通，酒店ping其他openvpn主机可以</p>
+<p>请检查下电脑防火墙</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dev.foxhis.com:945/2016/10/09/use-openvpn-visit-hotel-s-local-area-network/" data-id="ciurnvmk10000jbf8uphvgcn8" class="article-share-link">Partager</a>
+      <a data-url="http://dev.foxhis.com:945/2016/10/09/use-openvpn-visit-hotel-s-local-area-network/" data-id="cj0d3xrzv0003jgf81qool128" class="article-share-link">Share</a>
       
       
     </footer>
@@ -127,7 +130,7 @@
 <nav id="article-nav">
   
     <a href="/2016/10/24/foxhis-vpn/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Récent</strong>
+      <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
           foxhis_vpn
@@ -177,7 +180,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
     </div>
   </div>
 
@@ -185,9 +188,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/03/17/IDEA/">intelliJ IDEA 教程</a>
+          </li>
         
           <li>
             <a href="/2016/10/27/how-to-get-vpn-service/">how_to_get_vpn_service</a>
@@ -217,8 +224,8 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2016 Andy<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      &copy; 2017 Andy<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
