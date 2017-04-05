@@ -3,14 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2016/10 | Hexo</title>
+  <title>docker | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2016/10/index.html">
+  <meta name="description" content="启动5.6版本的mysql ，指定container名字为kft_mysql2，指定数据存在“/Users/andy/Documents/dockerfile”，指定密码为“mypassword”，端口为3306，账户默认为root 1docker run --name kft_mysql2 -v /Users/andy/Documents/dockerfile -e MYSQL_ROOT_PAS">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="docker">
+<meta property="og:url" content="http://yoursite.com/2017/04/05/docker/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="启动5.6版本的mysql ，指定container名字为kft_mysql2，指定数据存在“/Users/andy/Documents/dockerfile”，指定密码为“mypassword”，端口为3306，账户默认为root 1docker run --name kft_mysql2 -v /Users/andy/Documents/dockerfile -e MYSQL_ROOT_PAS">
+<meta property="og:updated_time" content="2017-04-05T07:14:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="docker">
+<meta name="twitter:description" content="启动5.6版本的mysql ，指定container名字为kft_mysql2，指定数据存在“/Users/andy/Documents/dockerfile”，指定密码为“mypassword”，端口为3306，账户默认为root 1docker run --name kft_mysql2 -v /Users/andy/Documents/dockerfile -e MYSQL_ROOT_PAS">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,96 +64,65 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/10/27/how-to-get-vpn-service/" class="archive-article-date">
-  <time datetime="2016-10-27T00:32:15.000Z" itemprop="datePublished">Oct 27</time>
+        <section id="main"><article id="post-docker" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/04/05/docker/" class="article-date">
+  <time datetime="2017-04-05T07:10:40.000Z" itemprop="datePublished">2017-04-05</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/10/27/how-to-get-vpn-service/">how_to_get_vpn_service</a>
+    <h1 class="article-title" itemprop="name">
+      docker
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/10/24/resources/" class="archive-article-date">
-  <time datetime="2016-10-24T07:23:58.000Z" itemprop="datePublished">Oct 24</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/10/24/resources/">resources</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/10/24/foxhis-vpn/" class="archive-article-date">
-  <time datetime="2016-10-24T05:28:03.000Z" itemprop="datePublished">Oct 24</time>
-</a>
+        <p>启动5.6版本的mysql ，指定container名字为kft_mysql2，指定数据存在“/Users/andy/Documents/dockerfile”，指定密码为“mypassword”，端口为3306，账户默认为root</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run --name kft_mysql2 -v /Users/andy/Documents/dockerfile -e MYSQL_ROOT_PASSWORD=mypassword -p 3306:3306 -d mysql:5.6</div></pre></td></tr></table></figure>
+<p>查看所有的container</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker ps -all</div></pre></td></tr></table></figure>
+<p>启动container</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker start containerid</div></pre></td></tr></table></figure>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/10/24/foxhis-vpn/">foxhis_vpn</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/10/09/use-openvpn-visit-hotel-s-local-area-network/" class="archive-article-date">
-  <time datetime="2016-10-09T01:33:00.000Z" itemprop="datePublished">Oct 9</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/04/05/docker/" data-id="cj14nahz7000356f8zg0mrlik" class="article-share-link">Partager</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/10/09/use-openvpn-visit-hotel-s-local-area-network/">use openvpn visit hotel&#39;s local area network</a>
-    </h1>
-  
-
-    </header>
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/04/05/serverskills/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          server skills
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/04/05/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
