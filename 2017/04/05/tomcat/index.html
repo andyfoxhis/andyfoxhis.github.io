@@ -5,17 +5,17 @@
   
   <title>tomcat | 西软移动开发团队</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#install java 1) 先去java官网下载rpm 2) 将rpm传到服务器 3) 执行下面教程的操作 http://lintut.com/how-to-install-java-8-on-rhel-centos-7-x-and-fedora-linux/ #install tomcat 参考下面的文章 https://www.digitalocean.com/community/tut">
+  <meta name="description" content="install java1) 先去java官网下载rpm 2) 将rpm传到服务器 3) 执行下面教程的操作 http://lintut.com/how-to-install-java-8-on-rhel-centos-7-x-and-fedora-linux/ install tomcat参考下面的文章 https://www.digitalocean.com/community/tutoria">
 <meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="tomcat">
 <meta property="og:url" content="http://dev.foxhis.com:945/2017/04/05/tomcat/index.html">
 <meta property="og:site_name" content="西软移动开发团队">
-<meta property="og:description" content="#install java 1) 先去java官网下载rpm 2) 将rpm传到服务器 3) 执行下面教程的操作 http://lintut.com/how-to-install-java-8-on-rhel-centos-7-x-and-fedora-linux/ #install tomcat 参考下面的文章 https://www.digitalocean.com/community/tut">
-<meta property="og:updated_time" content="2017-04-05T07:44:23.000Z">
+<meta property="og:description" content="install java1) 先去java官网下载rpm 2) 将rpm传到服务器 3) 执行下面教程的操作 http://lintut.com/how-to-install-java-8-on-rhel-centos-7-x-and-fedora-linux/ install tomcat参考下面的文章 https://www.digitalocean.com/community/tutoria">
+<meta property="og:updated_time" content="2017-04-05T08:16:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tomcat">
-<meta name="twitter:description" content="#install java 1) 先去java官网下载rpm 2) 将rpm传到服务器 3) 执行下面教程的操作 http://lintut.com/how-to-install-java-8-on-rhel-centos-7-x-and-fedora-linux/ #install tomcat 参考下面的文章 https://www.digitalocean.com/community/tut">
+<meta name="twitter:description" content="install java1) 先去java官网下载rpm 2) 将rpm传到服务器 3) 执行下面教程的操作 http://lintut.com/how-to-install-java-8-on-rhel-centos-7-x-and-fedora-linux/ install tomcat参考下面的文章 https://www.digitalocean.com/community/tutoria">
   
     <link rel="alternate" href="/atom.xml" title="西软移动开发团队" type="application/atom+xml">
   
@@ -86,25 +86,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#install java</p>
-<p>1) 先去java官网下载rpm</p>
+        <h1 id="install-java"><a href="#install-java" class="headerlink" title="install java"></a>install java</h1><p>1) 先去java官网下载rpm</p>
 <p>2) 将rpm传到服务器</p>
 <p>3) 执行下面教程的操作</p>
 <p><a href="http://lintut.com/how-to-install-java-8-on-rhel-centos-7-x-and-fedora-linux/" target="_blank" rel="external">http://lintut.com/how-to-install-java-8-on-rhel-centos-7-x-and-fedora-linux/</a></p>
-<p>#install tomcat</p>
-<p>参考下面的文章</p>
+<h1 id="install-tomcat"><a href="#install-tomcat" class="headerlink" title="install tomcat"></a>install tomcat</h1><p>参考下面的文章</p>
 <p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-centos-7" target="_blank" rel="external">https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-centos-7</a></p>
 <h1 id="开启-关闭-tomcat"><a href="#开启-关闭-tomcat" class="headerlink" title="开启 关闭 tomcat"></a>开启 关闭 tomcat</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sh /opt/tomcat/bin/startup.sh</div><div class="line">sh /opt/tomcat/bin/shutdown.sh</div></pre></td></tr></table></figure>
 <h2 id="查看并强制杀死tomcat"><a href="#查看并强制杀死tomcat" class="headerlink" title="查看并强制杀死tomcat"></a>查看并强制杀死tomcat</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ps -ef | grep tomcat</div><div class="line">kill 1234</div></pre></td></tr></table></figure>
 <h2 id="查看tomcat-启动log"><a href="#查看tomcat-启动log" class="headerlink" title="查看tomcat 启动log"></a>查看tomcat 启动log</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat /opt/tomcat/logs/catalina.out</div></pre></td></tr></table></figure>
-<p>##动态查看tomcat 启动log的尾部50行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tail -f -n 50 /opt/tomcat/logs/catalina.out</div></pre></td></tr></table></figure>
-<p>##查看历史命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">history</div></pre></td></tr></table></figure>
-<p>##修改tomcat配置，端口号、https等</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /opt/tomcat/conf/server.xml</div></pre></td></tr></table></figure>
-<p>#tomcat https</p>
-<ol>
+<h2 id="动态查看tomcat-启动log的尾部50行"><a href="#动态查看tomcat-启动log的尾部50行" class="headerlink" title="动态查看tomcat 启动log的尾部50行"></a>动态查看tomcat 启动log的尾部50行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tail -f -n 50 /opt/tomcat/logs/catalina.out</div></pre></td></tr></table></figure>
+<h2 id="查看历史命令"><a href="#查看历史命令" class="headerlink" title="查看历史命令"></a>查看历史命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">history</div></pre></td></tr></table></figure>
+<h2 id="修改tomcat配置，端口号、https等"><a href="#修改tomcat配置，端口号、https等" class="headerlink" title="修改tomcat配置，端口号、https等"></a>修改tomcat配置，端口号、https等</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /opt/tomcat/conf/server.xml</div></pre></td></tr></table></figure>
+<h1 id="tomcat-https"><a href="#tomcat-https" class="headerlink" title="tomcat https"></a>tomcat https</h1><ol>
 <li><p>将.jks文件放大/opt/tomcat/conf文件夹中</p>
 </li>
 <li><p>配置修改/opt/tomcat/conf/server.xml文件</p>
@@ -120,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dev.foxhis.com:945/2017/04/05/tomcat/" data-id="cj14oa5jh0007otf88h5gz60k" class="article-share-link">Share</a>
+      <a data-url="http://dev.foxhis.com:945/2017/04/05/tomcat/" data-id="cj14oak9n0007p0f820sfq42h" class="article-share-link">Share</a>
       
       
     </footer>

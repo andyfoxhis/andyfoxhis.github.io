@@ -92,7 +92,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dev.foxhis.com:945/2017/04/05/docker/" data-id="cj14oa5iz0000otf8pxlqsr03" class="article-share-link">Share</a>
+      <a data-url="http://dev.foxhis.com:945/2017/04/05/docker/" data-id="cj14oak9d0002p0f8c3n38c63" class="article-share-link">Share</a>
       
       
     </footer>
@@ -126,8 +126,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="使用google-cloud的一年免费服务"><a href="#使用google-cloud的一年免费服务" class="headerlink" title="使用google cloud的一年免费服务"></a>使用google cloud的一年免费服务</h1><p><a href="https://cloud.google.com/" target="_blank" rel="external">https://cloud.google.com/</a></p>
-<p>#购买域名(aliyun top域名比较便宜)</p>
-<p><a href="https://wanwang.aliyun.com/domain/newgtld/?spm=5176.8048432.308878.43.Ou51NI#.top" target="_blank" rel="external">https://wanwang.aliyun.com/domain/newgtld/?spm=5176.8048432.308878.43.Ou51NI#.top</a></p>
+<h1 id="购买域名-aliyun-top域名比较便宜"><a href="#购买域名-aliyun-top域名比较便宜" class="headerlink" title="购买域名(aliyun top域名比较便宜)"></a>购买域名(aliyun top域名比较便宜)</h1><p><a href="https://wanwang.aliyun.com/domain/newgtld/?spm=5176.8048432.308878.43.Ou51NI#.top" target="_blank" rel="external">https://wanwang.aliyun.com/domain/newgtld/?spm=5176.8048432.308878.43.Ou51NI#.top</a></p>
 <h1 id="生成自签名证书"><a href="#生成自签名证书" class="headerlink" title="生成自签名证书"></a>生成自签名证书</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">1. mkdir ssl_cert</div><div class="line"></div><div class="line">2. cd ssl_cert</div><div class="line"></div><div class="line">3. openssl genrsa -out example.key 2048</div><div class="line"></div><div class="line">4. openssl req -new -key example.key -out example.csr</div><div class="line"></div><div class="line">5. openssl x509 -req -days 365 -in example.csr -signkey example.key -out example.crt</div></pre></td></tr></table></figure>
 <p>参考链接</p>
 <p><a href="https://cloud.google.com/compute/docs/load-balancing/http/ssl-certificates" target="_blank" rel="external">https://cloud.google.com/compute/docs/load-balancing/http/ssl-certificates
@@ -153,7 +152,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dev.foxhis.com:945/2017/04/05/server skills/" data-id="cj14oa5jb0003otf8zmn9bbvf" class="article-share-link">Share</a>
+      <a data-url="http://dev.foxhis.com:945/2017/04/05/server skills/" data-id="cj14oak9m0006p0f8hx5jnbuu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -186,18 +185,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>// Apache配置https<br><a href="https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-apache-for-centos-7" target="_blank" rel="external">https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-apache-for-centos-7</a></p>
-<p>//  Apache各种命令<br>httpd -h<br>httpd -k start<br>httpd -k stop<br>httpd -k restart</p>
-<p>// 找到apache的安装路径</p>
-<p>httpd -V</p>
+        <h1 id="Apache配置https"><a href="#Apache配置https" class="headerlink" title="Apache配置https"></a>Apache配置https</h1><p><a href="https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-apache-for-centos-7" target="_blank" rel="external">https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-apache-for-centos-7</a></p>
+<h1 id="Apache各种命令"><a href="#Apache各种命令" class="headerlink" title="Apache各种命令"></a>Apache各种命令</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">httpd -h</div><div class="line">httpd -k start</div><div class="line">httpd -k stop</div><div class="line">httpd -k restart</div></pre></td></tr></table></figure>
+<h1 id="找到apache的安装路径"><a href="#找到apache的安装路径" class="headerlink" title="找到apache的安装路径"></a>找到apache的安装路径</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">httpd -V</div></pre></td></tr></table></figure>
 <p>查看 HTTPD_ROOT &amp;  SERVER_CONFIG_FILE 路径</p>
-<p>cd HTTPD_ROOT + SERVER_CONFIG_FILE</p>
-<p>vi httpd.conf</p>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd HTTPD_ROOT + SERVER_CONFIG_FILE</div><div class="line"></div><div class="line">vi httpd.conf</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dev.foxhis.com:945/2017/04/05/apache/" data-id="cj14oa5jb0004otf8392kluoj" class="article-share-link">Share</a>
+      <a data-url="http://dev.foxhis.com:945/2017/04/05/apache/" data-id="cj14oak9a0001p0f8jkpm1tqc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -230,25 +226,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#install java</p>
-<p>1) 先去java官网下载rpm</p>
+        <h1 id="install-java"><a href="#install-java" class="headerlink" title="install java"></a>install java</h1><p>1) 先去java官网下载rpm</p>
 <p>2) 将rpm传到服务器</p>
 <p>3) 执行下面教程的操作</p>
 <p><a href="http://lintut.com/how-to-install-java-8-on-rhel-centos-7-x-and-fedora-linux/" target="_blank" rel="external">http://lintut.com/how-to-install-java-8-on-rhel-centos-7-x-and-fedora-linux/</a></p>
-<p>#install tomcat</p>
-<p>参考下面的文章</p>
+<h1 id="install-tomcat"><a href="#install-tomcat" class="headerlink" title="install tomcat"></a>install tomcat</h1><p>参考下面的文章</p>
 <p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-centos-7" target="_blank" rel="external">https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-centos-7</a></p>
 <h1 id="开启-关闭-tomcat"><a href="#开启-关闭-tomcat" class="headerlink" title="开启 关闭 tomcat"></a>开启 关闭 tomcat</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sh /opt/tomcat/bin/startup.sh</div><div class="line">sh /opt/tomcat/bin/shutdown.sh</div></pre></td></tr></table></figure>
 <h2 id="查看并强制杀死tomcat"><a href="#查看并强制杀死tomcat" class="headerlink" title="查看并强制杀死tomcat"></a>查看并强制杀死tomcat</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ps -ef | grep tomcat</div><div class="line">kill 1234</div></pre></td></tr></table></figure>
 <h2 id="查看tomcat-启动log"><a href="#查看tomcat-启动log" class="headerlink" title="查看tomcat 启动log"></a>查看tomcat 启动log</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat /opt/tomcat/logs/catalina.out</div></pre></td></tr></table></figure>
-<p>##动态查看tomcat 启动log的尾部50行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tail -f -n 50 /opt/tomcat/logs/catalina.out</div></pre></td></tr></table></figure>
-<p>##查看历史命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">history</div></pre></td></tr></table></figure>
-<p>##修改tomcat配置，端口号、https等</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /opt/tomcat/conf/server.xml</div></pre></td></tr></table></figure>
-<p>#tomcat https</p>
-<ol>
+<h2 id="动态查看tomcat-启动log的尾部50行"><a href="#动态查看tomcat-启动log的尾部50行" class="headerlink" title="动态查看tomcat 启动log的尾部50行"></a>动态查看tomcat 启动log的尾部50行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tail -f -n 50 /opt/tomcat/logs/catalina.out</div></pre></td></tr></table></figure>
+<h2 id="查看历史命令"><a href="#查看历史命令" class="headerlink" title="查看历史命令"></a>查看历史命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">history</div></pre></td></tr></table></figure>
+<h2 id="修改tomcat配置，端口号、https等"><a href="#修改tomcat配置，端口号、https等" class="headerlink" title="修改tomcat配置，端口号、https等"></a>修改tomcat配置，端口号、https等</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /opt/tomcat/conf/server.xml</div></pre></td></tr></table></figure>
+<h1 id="tomcat-https"><a href="#tomcat-https" class="headerlink" title="tomcat https"></a>tomcat https</h1><ol>
 <li><p>将.jks文件放大/opt/tomcat/conf文件夹中</p>
 </li>
 <li><p>配置修改/opt/tomcat/conf/server.xml文件</p>
@@ -264,7 +254,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dev.foxhis.com:945/2017/04/05/tomcat/" data-id="cj14oa5jh0007otf88h5gz60k" class="article-share-link">Share</a>
+      <a data-url="http://dev.foxhis.com:945/2017/04/05/tomcat/" data-id="cj14oak9n0007p0f820sfq42h" class="article-share-link">Share</a>
       
       
     </footer>
@@ -312,7 +302,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dev.foxhis.com:945/2017/03/17/IDEA/" data-id="cj14oa5j50001otf8x9wcp4b0" class="article-share-link">Share</a>
+      <a data-url="http://dev.foxhis.com:945/2017/03/17/IDEA/" data-id="cj14oak960000p0f864g8jyhn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -351,7 +341,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dev.foxhis.com:945/2016/10/27/how-to-get-vpn-service/" data-id="cj14oa5j80002otf8c3rg3vwp" class="article-share-link">Share</a>
+      <a data-url="http://dev.foxhis.com:945/2016/10/27/how-to-get-vpn-service/" data-id="cj14oak9j0004p0f8nmvh012x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -417,7 +407,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dev.foxhis.com:945/2016/10/24/resources/" data-id="cj14oa5jg0006otf8676hkcf5" class="article-share-link">Share</a>
+      <a data-url="http://dev.foxhis.com:945/2016/10/24/resources/" data-id="cj14oak9k0005p0f82ec063fo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -461,7 +451,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dev.foxhis.com:945/2016/10/24/foxhis-vpn/" data-id="cj14oa5je0005otf8b0na1h7m" class="article-share-link">Share</a>
+      <a data-url="http://dev.foxhis.com:945/2016/10/24/foxhis-vpn/" data-id="cj14oak9h0003p0f8x7d1e071" class="article-share-link">Share</a>
       
       
     </footer>
@@ -520,7 +510,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://dev.foxhis.com:945/2016/10/09/use-openvpn-visit-hotel-s-local-area-network/" data-id="cj14oa5jm0008otf849f2kv39" class="article-share-link">Share</a>
+      <a data-url="http://dev.foxhis.com:945/2016/10/09/use-openvpn-visit-hotel-s-local-area-network/" data-id="cj14oak9p0008p0f80p1jkwbj" class="article-share-link">Share</a>
       
       
     </footer>
